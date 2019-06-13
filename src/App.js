@@ -43,20 +43,20 @@ class App extends React.Component {
         roomCount: this.state.roomCount - 1
       });
     }
-    console.log(roomCheck);
+   // console.log(roomCheck);
     if (this.state.adultCount + this.state.childrenCount > roomCheck * 4) {
       if (this.state.roomCount <= 5) {
         if (!(roomCheck * 4 - this.state.childrenCount < 0)) {
           if (this.state.adultCount < roomCheck) {
             let difference = roomCheck - adultCheck;
-            console.log("out");
+           
             this.setState({
               adultCount: this.state.adultCount + difference,
               childrenCount: roomCheck * 4 - this.state.adultCount
             });
           } else {
             // let difference = roomCheck - adultCheck;
-            console.log("inside");
+           // console.log("inside");
             let zero = roomCheck * 4 - this.state.adultCount;
             if (zero > 0) {
               this.setState({
@@ -74,7 +74,7 @@ class App extends React.Component {
           if (this.state.adultCount < roomCheck) {
             let difference = roomCheck - adultCheck;
             let d = roomCheck * 4 - (this.state.adultCount + difference);
-            console.log(d);
+           // console.log(d);
             this.setState({
               adultCount: this.state.adultCount + difference,
               childrenCount: d
