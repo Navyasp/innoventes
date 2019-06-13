@@ -3,6 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+###NPM install
+npm install @material-ui/core@1.2.0 @material-ui/icons@1.1.0 react-router-dom@4.3.1
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome
 
 ### `npm start`
 
